@@ -1,18 +1,23 @@
 # CodexX
 
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+### Status: In Progress
+
+![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
 
 ## Table of Contents
-
-1. [Features](#Features)
-2. [Description](#description)
+1. [Description](#description)
+2. [Features](#features)
 3. [Installation](#installation)
-4. [Usage](#Usage)
-5. [API Endpoints](#APIEndpoints)
-6. [Technologies Used](#TechnologiesUsed)
-7. [Future Enhancements](#FutureEnhancements)
-8. [License](#License)
-9. [Contact Us](#ContactUs)
+4. [Usage](#usage)
+5. [API Endpoints](#api-endpoints)
+6. [Tools and Technologies](#tools-and-technologies)
+7. [Dependencies and Installs](#dependencies-and-installs)
+8. [Future Enhancements](#future-enhancements)
+9. [License](#license)
+10. [Contributing](#contributing)
+11. [Contact Us](#contact-us)
+12. [Tests](#tests)
+13. [Questions](#questions)
 
 ## Description
 CodexX is a comprehensive video game discovery and wishlist platform built with React, TypeScript, Node.js, Express, Sequelize, and PostgreSQL. It leverages the RAWG Video Games Database API for detailed game information. This platform allows users to search for games, view details, add favorite games to their personal library, rate them, and maintain a personalized wishlist.
@@ -24,12 +29,13 @@ CodexX is a comprehensive video game discovery and wishlist platform built with 
 - Responsive Design: Built with a responsive UI for seamless use across devices. 
 
 ## Installation
+To use the application, follow these steps:
 
-1. **Clone the repository**:
+- Step 1: **Clone the repository**:
     ```bash
     git clone https://github.com/yourusername/CodexX.git
     ```
-2. **Install dependencies**:
+- Step 2: **Install dependencies**:
    - For the server:
      ```bash
      cd CodexX/server
@@ -40,7 +46,7 @@ CodexX is a comprehensive video game discovery and wishlist platform built with 
      cd ../client
      npm install
      ```
-3. **Configure environment variables**:
+- Step 3: **Configure environment variables**:
    - Create `.env` files in both `/server` and `/client` directories.
    - In `/server/.env`, set up your database and JWT secret keys:
      ```plaintext
@@ -52,10 +58,10 @@ CodexX is a comprehensive video game discovery and wishlist platform built with 
      REQUEST_URL=https://api.rawg.io/api/
      API_KEY=your_rawg_api_key
      ```
-4. **Run the database setup**:
+- Step 4: **Run the database setup**:
    - Start PostgreSQL and run the schema setup located in `server/db/schema.sql`.
    - (Optional) Seed the database with sample users and games using the seed scripts in `server/src/seeds`.
-5. **Start the development servers**:
+- Step 5: **Start the development servers**:
    - For the server:
      ```bash
      npm run start:dev
@@ -65,13 +71,15 @@ CodexX is a comprehensive video game discovery and wishlist platform built with 
      cd ../client
      npm run dev
      ```
-
 ## Usage
-1. Signup/Login: Register a new account or log in with existing credentials.
-2. Search Games: Use the search bar to look up specific games or explore popular games on the home page.
-3. Add to Wishlist: Add games to your wishlist to save for future exploration.
-4. Rate Games: Rate games in your library.
-5. View Wishlist: Visit the Wishlist page to see your personalized collection.
+To start the application, run the following command: `npm start`.
+
+When you execute this command, the application will launch in your web browser. You can then:
+- Signup/Login: Register a new account or log in with existing credentials.
+- Search Games: Use the search bar to look up specific games or explore popular games on the home page.
+- Add to Wishlist: Add games to your wishlist to save for future exploration.
+- Rate Games: Rate games in your library.
+- View Wishlist: Visit the Wishlist page to see your personalized collection.
 
 ## API Endpoints
 The backend exposes the following API routes:
@@ -94,12 +102,31 @@ Game Data (RAWG API)
 
 Note: Some routes require authentication. Make sure to pass the JWT token in the request headers after logging in.
 
-## Technologies Used
-- Frontend: React, TypeScript, Vite
-- Backend: Node.js, Express
-- Database: PostgreSQL, Sequelize ORM
-- API: RAWG Video Games Database API
-- Authentication: JSON Web Tokens (JWT)
+## Tools and Technologies
+**Programming Language**:
+- TypeScript
+
+**Libraries & Frameworks**:
+- React
+- Express
+- JWT
+- Vite
+
+**Development Environment**:
+  - Node.js
+
+## Dependencies and Installs
+
+**NPM Packages**:
+- `express` - Handles server-side routing and API requests.
+- `jsonwebtoken` - Manages JSON Web Token creation and verification for authentication.
+- `dotenv` - Loads environment variables from a .env file.
+- `pg` - PostgreSQL client for Node.js, facilitating database interactions.
+- `cors` - Enables Cross-Origin Resource Sharing, allowing communication between the client and server.
+- `bcryptjs` - Hashes passwords securely for storage.
+- `axios` - Makes HTTP requests to external APIs, like RAWG.
+- `concurrently` - Runs client and server scripts simultaneously for development.
+- `nodemon` - Restarts the server automatically when files change in development.
 
 ## Future Enhancements
 - Friend System: Allow users to view and share libraries with friends.
@@ -107,8 +134,11 @@ Note: Some routes require authentication. Make sure to pass the JWT token in the
 - Enhanced Search: Advanced filtering by genre, platform, rating, etc.
 - Profile Customization: Allow users to customize profile and wishlist views.
 
-## License:
-This application is covered under the following license: [MIT License](https://www.gnu.org/licenses/gpl-3.0)
+## License
+This project is licensed under the MIT License, which allows you to freely use, modify, and distribute this software, provided proper attribution is given.
+
+## Contributing
+This project is part of a coding bootcamp assignment and is not open for contributions. To comply with the course requirements, I must complete this project individually without outside assistance. Therefore, pull requests, issues, or other contributions will not be accepted. Thank you for understanding!
 
 ## Contact Us
 **Brad**:
@@ -127,3 +157,9 @@ This application is covered under the following license: [MIT License](https://w
 **Yahye**:
 - https://github.com/yahye-mohamed101
 - yahyemohamed2002@gmail.com
+
+## Tests
+Currently, this project does not have any automated tests.
+
+## Questions
+If you have any questions about the repository, feel free to reach out by opening an issue or contacting me directly at cheyennaraelynn@gmail.com You can also find more of my work on GitHub at https://github.com/RaeOfChey.
