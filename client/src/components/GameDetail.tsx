@@ -49,7 +49,7 @@ const GameDetail: React.FC<GameDetailProps> = () => {
   return (
     <div className="game-detail">
       <section className="hero">
-        
+
         <div className="hero-body specific-hero-body">
           <p className="title is-4 unique-game-name">{game.name}</p>
           <p className="subtitle-metacritic">Metacritic - {game.metacritic}</p>
@@ -80,6 +80,9 @@ const GameDetail: React.FC<GameDetailProps> = () => {
       <div>
         <h1 className="title is-4">Description</h1>
         <div dangerouslySetInnerHTML={{ __html: game.description }}></div>
+      </div>
+      <div>
+        {devTeamString}
       </div>
       {/* Render more details as needed */}
     </div>
