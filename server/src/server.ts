@@ -28,7 +28,9 @@ app.get('*', (__req, res) => {
 
 // Synchronize the database and then start the server
 sequelize.sync({ force: forceDatabaseRefresh }).then(() => {
-  app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Attempting to listen on port ${PORT}`);
+  // Only one app.listen call
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is listening on port ${PORT}`);
   });
 });
