@@ -1,21 +1,19 @@
 # CodexX
-
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-## Table of Contents
-
-1. [Description](#description)
-2. [Features](#Features)
-3. [Installation](#installation)
-4. [Usage](#Usage)
-5. [API Endpoints](#APIEndpoints)
-6. [Technologies Used](#TechnologiesUsed)
-7. [Future Enhancements](#FutureEnhancements)
-8. [License](#License)
-9. [Contact Us](#ContactUs)
 
 ## Description
 CodexX is a comprehensive video game discovery and wishlist platform built with React, TypeScript, Node.js, Express, Sequelize, and PostgreSQL. It leverages the RAWG Video Games Database API for detailed game information. This platform allows users to search for games, view details, add favorite games to their personal library, rate them, and maintain a personalized wishlist.
+
+## Table of Contents
+
+- [Features](#Features)<br/>
+- [Installation](#installation)<br/>
+- [Usage](#Usage)<br/>
+- [API Endpoints](#APIEndpoints)<br/>
+- [Technologies Used](#TechnologiesUsed)<br/>
+- [Future Enhancements](#FutureEnhancements)<br/>
+- [License](#License)<br/>
+- [Contact Us](#ContactUs)<br/>
 
 ## Features
 - User Authentication: Secure login and signup with JSON Web Tokens (JWT).
@@ -114,13 +112,11 @@ This application is covered under the following license: [MIT License](https://w
 **Brad**:
 - https://github.com/modifiedyoke
 - b.shurts@outlook.com
- 
 
 **Cheyenna**:
 - https://github.com/RaeOfChey
 - https://cheyenna-raelynn-portfolio.netlify.app/
 - cheyennaraelynn@gmail.com
-
 
 **Kyle**:
 - https://github.com/kyand38/
