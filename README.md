@@ -22,6 +22,12 @@
 ## Description
 CodexX is a comprehensive video game discovery and wishlist platform built with React, TypeScript, Node.js, Express, Sequelize, and PostgreSQL. It leverages the RAWG Video Games Database API for detailed game information. This platform allows users to search for games, view details, add favorite games to their personal library, rate them, and maintain a personalized wishlist.
 
+To view the application, simply navigate to the live website at https://codexx-4hxs.onrender.com.
+
+X
+
+Example of ProfilePage for a user
+
 ## Features
 - User Authentication: Secure login and signup with JSON Web Tokens (JWT).
 - Game Search and Details: Integrated with RAWG API for comprehensive game data, including genres, platforms, release dates, and more.
