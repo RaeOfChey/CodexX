@@ -14,6 +14,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+console.log(`Listening on port: ${PORT}`);
 
 app.use(express.json());
 app.use('/api', routes);
