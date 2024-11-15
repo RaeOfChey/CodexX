@@ -24,7 +24,7 @@ CodexX is a comprehensive video game discovery and wishlist platform built with 
 
 To view the application, simply navigate to the live website at https://codexx-4hxs.onrender.com.
 
-X
+<img width="640" alt="CodexX Thumbnail Image" src="https://github.com/user-attachments/assets/622687fa-4ffe-4297-bf5a-ea16e09c1822">
 
 Example of ProfilePage for a user
 
@@ -33,6 +33,10 @@ Example of ProfilePage for a user
 - Game Search and Details: Integrated with RAWG API for comprehensive game data, including genres, platforms, release dates, and more.
 - Personalized Library and Wishlist: Users can add games to their wishlist, rate them, and view their personalized library.
 - Responsive Design: Built with a responsive UI for seamless use across devices. 
+
+<img width="640" alt="Capture 2" src="https://github.com/user-attachments/assets/0a0f6259-a93c-4340-a69e-a3b6a0b9f107">
+
+Example of LoginPage
 
 ## Installation
 To use the application, follow these steps:
@@ -93,7 +97,7 @@ The backend exposes the following API routes:
 Authentication
 - POST /api/auth/login - User login
 - POST /api/auth/new - New user signup
-- 
+  
 Library (Wishlist)
 - POST /api/library/library-entries - Add a game to the user’s library
 - GET /api/library/library-entries - Retrieve all library entries for the logged-in user
