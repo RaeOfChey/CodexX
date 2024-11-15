@@ -1,19 +1,21 @@
 # CodexX
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Description
-CodexX is a comprehensive video game discovery and wishlist platform built with React, TypeScript, Node.js, Express, Sequelize, and PostgreSQL. It leverages the RAWG Video Games Database API for detailed game information. This platform allows users to search for games, view details, add favorite games to their personal library, rate them, and maintain a personalized wishlist.
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 
-- [Features](#Features)<br/>
-- [Installation](#installation)<br/>
-- [Usage](#Usage)<br/>
-- [API Endpoints](#APIEndpoints)<br/>
-- [Technologies Used](#TechnologiesUsed)<br/>
-- [Future Enhancements](#FutureEnhancements)<br/>
-- [License](#License)<br/>
-- [Contact Us](#ContactUs)<br/>
+1. [Features](#Features)
+2. [Description](#description)
+3. [Installation](#installation)
+4. [Usage](#Usage)
+5. [API Endpoints](#APIEndpoints)
+6. [Technologies Used](#TechnologiesUsed)
+7. [Future Enhancements](#FutureEnhancements)
+8. [License](#License)
+9. [Contact Us](#ContactUs)
+
+## Description
+CodexX is a comprehensive video game discovery and wishlist platform built with React, TypeScript, Node.js, Express, Sequelize, and PostgreSQL. It leverages the RAWG Video Games Database API for detailed game information. This platform allows users to search for games, view details, add favorite games to their personal library, rate them, and maintain a personalized wishlist.
 
 ## Features
 - User Authentication: Secure login and signup with JSON Web Tokens (JWT).
