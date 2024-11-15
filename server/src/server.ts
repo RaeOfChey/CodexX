@@ -7,14 +7,15 @@ dotenv.config();
 
 import express from 'express';
 import routes from './routes/index.js';
-import sequelize  from './config/connection.js';
+import sequelize from './config/connection.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 3001;
-console.log(`Listening on port: ${PORT}`);
+
+// Parse PORT to number
+const PORT = parseInt(process.env.PORT || '3001', 10);
 
 app.use(express.json());
 app.use('/api', routes);
@@ -25,8 +26,9 @@ app.get('*', (__req, res) => {
   res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
 });
 
-sequelize.sync({force: forceDatabaseRefresh}).then(() => {
-  app.listen(PORT, () => {
+// Synchronize the database and then start the server
+sequelize.sync({ force: forceDatabaseRefresh }).then(() => {
+  app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server is listening on port ${PORT}`);
   });
 });
