@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Incremental Builds */
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    /* Targeting and Libraries */
+    "target": "ES2022",
+    "lib": [
+      "ES2023"
+    ],
+    /* Module Handling */
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    /* Type and Error Checking */
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": [
+    "vite.config.ts"
+  ]
+}
